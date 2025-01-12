@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    color: steelblue;
+    background-image: linear-gradient(90deg, lightblue, lightpink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#submit {
+    background-color: lightsteelblue;
+    color: white;
+    border: 1px solid white;
+}
+
+#submit:hover {
+    background-color: palevioletred;
+}
+
+.hidden {
+    display: none;
+} 
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+    row-gap: 1px;
+    margin: 7px auto;
+    width: 250px;
+}
+
+#board div {
+    width: 30px;
+    height: 30px;
+    border: 2px solid lightcyan;
+    background-color: lightpink;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+}
+
+#board .correct {
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+
+#board .partial {
+    background-color: #FDDA0D;
+    border-color: #FDDA0D;
+    color: white;
+}
+
+#board .wrong {
+    background-color: grey;
+    border-color: grey;
+    color: white;
+}
+
+#keyboard {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.key-row {
+    margin-bottom: 10px;
+}
+
+.key {
+    padding: 5px;
+    margin: 2px;
+    font-size: 1rem;
+    background-color: lightcyan;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.key.large-key {
+    width: 70px;
+}
+
+.key:hover {
+    background-color: lightcoral;
+}
